@@ -2,9 +2,14 @@
   "name": "jjicecreamv2",
   "version": "1.0.0",
   "description": "Judy's Jimmies v2 Ice Cream Shop",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptnoire/JJIceCreamv2.git"
   },
   "author": "",
   "license": "ISC",
