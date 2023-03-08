@@ -218,6 +218,8 @@ section {
     width: 100%;
     opacity: .4;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .drip1 { background-image: url(./src/img/waves/wave1.svg);
