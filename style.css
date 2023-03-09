@@ -5,8 +5,8 @@ html {
 
 :root {
     --black-: #37383d;
-    --pink-grad: linear-gradient(to top left, rgb(226, 13, 230), rgb(244, 139, 223));
-    --highlight-pink: linear-gradient(to top left, rgb(230, 13, 172), #f48a9a);
+    --pink-grad: linear-gradient(to top left, #27cded, rgb(139, 151, 244));
+    --highlight-pink: linear-gradient(to top left, #27cded, #8a91f4);
     --white-: #fffffd;
     --light-pink: #ffc1c1;
 }
@@ -294,6 +294,7 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    filter: hue-rotate(230deg);
 }
 
 .drip1 { background-image: url(./src/img/waves/wave1.svg);
