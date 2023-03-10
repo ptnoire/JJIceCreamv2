@@ -5,7 +5,7 @@ html {
 
 :root {
     --black-: #37383d;
-    --gradient-: linear-gradient(to top left, #6f569e, #9763b7);
+    --gradient-: linear-gradient(to left, #df7fa4c6, #7961ae);
     --highlight-: linear-gradient(to top left, #27cded, #8a91f4);
     --white-: #fffffd;
     --light-pink: #ffc1c1;
@@ -76,6 +76,7 @@ section {
     grid-template-areas: 
         "s_title s_desc";
     margin-bottom: 10%;
+    transition: all 2s;
 }
 
 .navLinks {

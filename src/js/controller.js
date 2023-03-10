@@ -1,5 +1,7 @@
+const section = document.querySelectorAll('section');
 const sTitle = document.querySelectorAll('.s_title');
 const sDesc = document.querySelectorAll('.s_desc');
+console.log(section);
 
 const obsCallback = function(entries, obs) {
     const [entry] = entries;
@@ -16,12 +18,7 @@ const obsOptions = {
 
 const observer = new IntersectionObserver(obsCallback, obsOptions);
 
-sTitle.forEach(el => {
-    el.classList.add('hidden')
-    observer.observe(el)
-});
-
-sDesc.forEach(el => {
+section.forEach(el => {
     el.classList.add('hidden');
-    observer.observe(el);
-});
+    observer.observe(el)
+})
