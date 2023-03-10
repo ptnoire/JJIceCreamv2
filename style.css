@@ -312,10 +312,7 @@ section {
 
 @media only screen and (max-width: 800px) {
     section { margin-bottom: 30%; }
-    img { height: 40%; width: 40%;
-        min-height: 100px;
-        min-width: 100px; 
-    }
+    img { height: 40%; width: 40%; }
     h1 { font-size: 2rem; }
     h2 { font-size: 1.5rem; }
     h3 { font-size: .9rem; }
@@ -347,7 +344,7 @@ section {
         margin-right: 3%;
         text-align: right;
         margin-top: 5%;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .orams {
         height: 35%;
