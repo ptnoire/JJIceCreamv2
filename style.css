@@ -27,8 +27,7 @@ html {
 
 body { 
     margin: 0;
-    background-color: var(--white-); 
-    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(138,145,244,0.7343312324929971) 0%, rgba(255,255,255,0.6222864145658263) 33%, rgba(0,154,255,0) 97%);    overflow-x: hidden;
 }
 
 h1, h2, h3, p, a, a:visited { color: var(--black-); }
@@ -146,6 +145,8 @@ section {
     background-image: var(--highlight-);
 }
 
+.cText { text-align: center; margin-top: 15%; }
+
 .header__logo {
     margin-top: 15vh;
     display: flex;
@@ -183,10 +184,11 @@ section {
 } */
 
 .menu_i {
-    background-image: url(./src/img/waves/wave1.svg);
+    background-image: url(./src/img/waves/iceCreamWave.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: var(--white-);
     border: 1px solid var(--black-);
     display: grid;
     grid-template-columns: .5fr 1fr;
@@ -242,6 +244,7 @@ section {
     z-index: 5;
     transform: translateY(45%);
 }
+.smiths { object-fit: cover; }
 .oram_p {
     padding-bottom: 220px;
 }
@@ -323,7 +326,8 @@ section {
         min-width: 100px;
         max-height: 400px;
         max-width: 300px;
-     }
+    }
+    .cText { margin-top: 5%; }
     .opening__hours, .facebook_widget, .googlemaps_widget {
         width: 300px;
         height: 400px;
