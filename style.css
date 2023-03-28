@@ -48,7 +48,7 @@ table {
     text-align: center; 
 }
 
-td { border: 1px solid var(--black-); }
+td { border: 1px solid var(--black-); background-color: var(--white-); }
 
 img { 
     height: 25%; 
@@ -140,9 +140,23 @@ section {
     height: 100%;
     width: 115%;
     z-index: -1;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transform: scale(1.2, 1.07) skewX(-15deg);
     background-image: var(--highlight-);
+}
+
+.s_desc::before {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 200%;
+    background-image: var(--highlight-);
+    transform: scale(1.2, 1) skewX(-15deg);
+    opacity: .2;
+    z-index: -2;
 }
 
 .cText { text-align: center; margin-top: 15%; }
@@ -376,12 +390,14 @@ section {
     transition: all .5s;
 }
 
-.highlight {
+.highlight, .highlight2 {
     position: relative;
     color: var(--white-);
 }
 
-.highlight::after {
+.highlight2 { color: var(--black-); }
+
+.highlight::after, .highlight2::after {
     display: block;
     content: '';
     position: absolute;
@@ -393,6 +409,13 @@ section {
     opacity: 0.7;
     transform: scale(1.07, 1.05) skewX(-15deg);
     background-image: var(--highlight-);
+}
+
+.highlight2::after {
+    z-index: 1;
+    opacity: .2;
+    transform: scale(1.1, 1.5) skewX(-15deg);
+    background-image: var(--gradient-);
 }
 
 ::-webkit-scrollbar {
